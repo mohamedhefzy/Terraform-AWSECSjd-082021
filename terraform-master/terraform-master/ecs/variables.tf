@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default     = "eu-west-1"
+  default     = "eu-central-1"
   description = "aws region where our resources going to create choose"
   #replace the region as suits for your requirement
 }
@@ -15,7 +15,7 @@ variable "ecs_task_execution_role" {
 }
 
 variable "app_image" {
-  default     = "nginx:latest"
+  default     = "public.ecr.aws/y8s5k7q6/simpregistry:latest"
   description = "docker image to run in this ECS cluster"
 }
 
